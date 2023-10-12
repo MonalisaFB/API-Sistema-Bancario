@@ -77,14 +77,32 @@ http://localhost:3000/contas
 }
 ```
 
-<img src="COLOCAR IMAGEM>
+<img src="https://github.com/MonalisaFB/API-Sistema-Bancario/assets/142239212/5477dfc2-fbfc-4535-b14e-490053d65d3d">
 
-- [ ] Listar Contas Bancárias - **GET**
+### Listar Contas Bancárias - **GET**
 ```javascript
 http://localhost:3000/contas?senha_banco=Cubos123Bank
 ```
 
-<img src="Colocar Imagem" >
+<img src="https://github.com/MonalisaFB/API-Sistema-Bancario/assets/142239212/c8cd7301-5707-4e14-b18c-411f6409f95c" >
+
+### Atualizar Usuário da Conta Bancária - **PUT**
+```javascript
+http://localhost:3000/contas/:numeroConta/usuario
+```
+```javascript
+// No body (JSON) preencher os dados da requisição:
+{
+			"nome": "Exemplo 1",
+			"cpf": "00011122233",
+			"data_nascimento": "01/01/1994",
+			"telefone": "85911114444",
+			"email": "exemplo1@exemplo.com",
+			"senha": "123"
+}
+```
+
+<img src="https://github.com/MarcelaLinhares/API-REST-Sistema-Bancario/assets/142239212/8ac2dcb5-42ac-423d-974a-bf66ad6512c0" >
 
 ### Excluir Conta Bancária - **DELETE**
 
@@ -92,7 +110,7 @@ http://localhost:3000/contas?senha_banco=Cubos123Bank
 http://localhost:3000/contas/:numeroConta
 ```
 
-<img src="COLOCAR IMAGEM" >
+<img src="https://github.com/MonalisaFB/API-Sistema-Bancario/assets/142239212/8f8ff61c-091f-41e8-b031-4a3888cc7135" >
 
 ### Depositar - **POST**
 
@@ -108,7 +126,7 @@ http://localhost:3000/transacoes/depositar
 }
 ```
 
-<img src="COLOCAR IMAGEM" >
+<img src="https://github.com/MonalisaFB/API-Sistema-Bancario/assets/142239212/5bc3c429-3cec-4412-b8bb-b37db76ccf31" >
 
 ### Sacar - **POST**
 
@@ -125,7 +143,7 @@ http://localhost:3000/transacoes/sacar
 }
 ```
 
-<img src="COLOCAR IMAGEM" >
+<img src="https://github.com/MonalisaFB/API-Sistema-Bancario/assets/142239212/4f15eeaa-ca16-41f8-bcd4-73697eed1a7f" >
 
 ### Transferir - **POST**
 
@@ -143,7 +161,7 @@ http://localhost:3000/transacoes/transferir
 }
 ```
 
-<img src="COLOCAR IMAGEM" >
+<img src="https://github.com/MonalisaFB/API-Sistema-Bancario/assets/142239212/a38aae53-2f8a-4acb-bcaf-4dbfbf49ed96" >
 
 ### Consultar Saldo - **GET**
 
@@ -151,7 +169,7 @@ http://localhost:3000/transacoes/transferir
 http://localhost:3000/contas/saldo?numero_conta=1&senha=123456
 ```
 
-<img src="COLOCAR IMAGEM" >
+<img src="https://github.com/MonalisaFB/API-Sistema-Bancario/assets/142239212/49e54e96-6f01-430d-940e-8e86b6d78524" >
 
 ### Emitir Extrato - **GET**
 
@@ -159,7 +177,7 @@ http://localhost:3000/contas/saldo?numero_conta=1&senha=123456
 http://localhost:3000/contas/extrato?numero_conta=1&senha=123456
 ```
 
-<img src="COLOCAR IMAGEM" >
+<img src="https://github.com/MonalisaFB/API-Sistema-Bancario/assets/142239212/62c84ac1-7577-4ac6-8965-a2ae64d93b28" >
 
 ## Desenvolvedores
 
