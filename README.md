@@ -8,23 +8,23 @@ Com o objetivo de construir uma API de um Banco digital com padrão REST.
 
 ## Fucionalidades do Projeto
 
-- Criar conta bancária
+- [ ] Criar conta bancária
 
-- Listar contas bancárias
+- [ ] Listar contas bancárias
 
-- Atualizar os dados do usuário da conta bancária
+- [ ] Atualizar os dados do usuário da conta bancária
 
-- Excluir uma conta bancária
+- [ ] Excluir uma conta bancária
 
-- Depositar em uma conta bancária
+- [ ] Depositar em uma conta bancária
 
-- Sacar de uma conta bancária
+- [ ] Sacar de uma conta bancária
 
-- Transferir valores entre contas bancárias
+- [ ] Transferir valores entre contas bancárias
 
-- Consultar saldo da conta bancária
+- [ ] Consultar saldo da conta bancária
 
-- Emitir extrato bancário
+- [ ] Emitir extrato bancário
 
 ## Linguagens e Ferramentas
 
@@ -57,8 +57,9 @@ Abra o insomnia e use o caminho:
 http://localhost:3000/
 
 ## Endpoints no Insomnia
+ 
 
-- Criar Conta Bancária - **POST**
+### Criar Conta Bancária - **POST**
 
 ```javascript
 http://localhost:3000/contas
@@ -78,7 +79,14 @@ http://localhost:3000/contas
 
 <img src="COLOCAR IMAGEM>
 
-- Excluir Conta Bancária - **DELETE**
+- [ ] Listar Contas Bancárias - **GET**
+```javascript
+http://localhost:3000/contas?senha_banco=Cubos123Bank
+```
+
+<img src="Colocar Imagem" >
+
+### Excluir Conta Bancária - **DELETE**
 
 ```javascript
 http://localhost:3000/contas/:numeroConta
@@ -86,7 +94,7 @@ http://localhost:3000/contas/:numeroConta
 
 <img src="COLOCAR IMAGEM" >
 
-- Depositar - **POST**
+### Depositar - **POST**
 
 ```javascript
 http://localhost:3000/transacoes/depositar
@@ -102,7 +110,7 @@ http://localhost:3000/transacoes/depositar
 
 <img src="COLOCAR IMAGEM" >
 
-- Sacar - **POST**
+### Sacar - **POST**
 
 ```javascript
 http://localhost:3000/transacoes/sacar
@@ -119,7 +127,7 @@ http://localhost:3000/transacoes/sacar
 
 <img src="COLOCAR IMAGEM" >
 
-- Transferir - **POST**
+### Transferir - **POST**
 
 ```javascript
 http://localhost:3000/transacoes/transferir
@@ -137,7 +145,7 @@ http://localhost:3000/transacoes/transferir
 
 <img src="COLOCAR IMAGEM" >
 
-- Consultar Saldo - **GET**
+### Consultar Saldo - **GET**
 
 ```javascript
 http://localhost:3000/contas/saldo?numero_conta=1&senha=123456
@@ -145,7 +153,7 @@ http://localhost:3000/contas/saldo?numero_conta=1&senha=123456
 
 <img src="COLOCAR IMAGEM" >
 
-- Emitir Extrato - **GET**
+### Emitir Extrato - **GET**
 
 ```javascript
 http://localhost:3000/contas/extrato?numero_conta=1&senha=123456
